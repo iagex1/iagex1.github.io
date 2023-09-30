@@ -110,43 +110,41 @@
       (function () {
           emailjs.init(`${{ secrets.MAIL_KEY }}`);
       })();
+      </script>
+
+    <script  type="text/javascript">
     
-      window.onload = function () {
-        var contactForm = document.getElementById('contact-form');
-        var submitButton = contactForm.querySelector('input[type="submit"]');
-        var loadingOverlay = document.getElementById('loadingOverlay');
-    
-        contactForm.addEventListener('submit', function (event) {
-          event.preventDefault();
-    
-          // Disable the submit button while processing
-          // submitButton.disabled = true;
-    
-          // Show loading overlay
-          loadingOverlay.style.display = 'block';
-    
-          // Generate a random five-digit number for the contact_number variable
-          this.contact_number.value = Math.random() * 100000 | 0;
-    
-          // Send the form using EmailJS
-          emailjs
-            .sendForm('contact_service', 'contact_form', this)
-            .then(() => {
-              // Redirect to success page
-              window.location.href = 'success.html';
-            })
-            .catch(() => {
-              // Redirect to failure page
-              window.location.href = 'failed.html';  
-            })
-            .finally(() => {
-              // Always hide loading spinner
-              loadingOverlay.style.display = 'none'; 
-            });
+        window.onload = function() {
+
+        const form = document.getElementById('contact-form');
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        
+
+        form.addEventListener('submit', function(e) {
+
+          e.preventDefault();
+      
+
+
+          const serviceId = 'service_id';
+          const templateId = 'template_id';
+          const contactNumber = Math.random() * 100000 | 0;
+          this.contact_number.value = contactNumber;
+          emailjs.sendForm(serviceId, templateId, this)
+          .then(() => {
+            // Redirect to success page
+            window.location.href = 'success.html';
+          })
+          .catch(() => {
+            // Redirect to failure page
+            window.location.href = 'failed.html';  
+          })
+          .finally(() => {
+            // Always hide loading spinner
+            loadingOverlay.style.display = 'none'; 
           });
-        };
-
-
+          });
+        }
     </script>
 
   </div>
