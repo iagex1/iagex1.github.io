@@ -1,63 +1,306 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title> iAgEx </title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
-<body>
-  <div class="container">
-    <div class="content">
-      <div class="left-side">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iAgEx</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        footer {
+           position: absolute;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           background-color: #f1f8fc;
+           color: #312f3a;
+           text-align: center;
+        }
+        </style>
 
-        <div class="email details">
-          <i class="fas fa-envelope"></i>
-          <div class="topic">Email</div>
-          <div class="text-one">support@iagex.in</div>
+  </head>
+
+  <body>
+    <main>
+        <div id="loader" class="center1"></div>
+      <div class="big-wrapper light">
+        <img src="./img/shape.png" alt="" class="shape" />
+
+        <header>
+
+          <div class="container">
+            <div class="logo">
+              <img src="./img/logo.png" alt="Logo" />
+              <h3>Indian Agro Exports</h3>
+            </div>
+
+            <div class="links">
+                <ul>
+                  <li><a href="./contact.html" class="btn">Contact Us</a></li>
+                </ul>
+              </div>
+            
+            <div class="overlay"></div>
+
+            <div class="hamburger-menu">
+              <div class="bar">
+                
+              </div>
+            </div>
         </div>
-      </div>
-      <div class="right-side">
-        <div class="topic-text">Thank you for your interest in iAgEx - Indian Agro Exports!<br> Our website is currently under development and will be launching shortly.</div><br>
-        <p>At iAgEx, we aspire to deliver the authentic taste of India to the world by exporting the finest organic agricultural goods such as jaggery, dals, rice, dried red chillies, and more. Our team brings decades of wholesale expertise to source only the highest quality ingredients directly from farms across India.</p><br>
-        
-        <p>While our site is still getting ready, please reach out if you would like to get in touch with any questions or to learn more. We look forward to sharing the diverse flavors of India with you very soon!</p><br>
-        <form action="/submit_form" method="post">
+        </header>
 
-            <div class="input-box">
-              <input type="text" name="company" placeholder="Your Company" required>
+<div class="showcase-area">
+    <div class="container">
+  
+      <!-- Row 1 -->
+
+        <div class="showcase-section">
+
+            <div class="left">
+                <div class="big-title">
+                <h1>Welcome To iAgEx - Indian Agro Exports.</h1>
+                </div>
+                <p class="text">
+                At iAgEx, we are passionate about bringing the finest Indian agro products directly from the hands of our skilled farmers to your global markets. We are committed to fostering sustainable farming practices, empowering our local agricultural communities, and delivering premium-quality agro products to customers worldwide.
+                </p>
+                <div class="cta">
+                <a href="contact.html" class="btn">Contact Us</a>
+                </div>
             </div>
-          
-            <div class="input-box">
-              <input type="text" name="product" placeholder="Product Interested In" required>
+
+            <div class="right">
+                <img src="./img/farmland.jpg" class="image-with-curve"> 
             </div>
-          
-            <div class="input-box">
-              <input type="number" name="quantity" placeholder="Required Quantity" required>
+        </div>
+
+      <!-- Row 2 -->
+
+        <div class="showcase-section">
+            <div class="left">
+            <img src="./img/dry_farm.jpg" class="image-with-curve">
             </div>
-          
-            <div class="input-box">
-              <input type="text" name="location" placeholder="Your City" required>
+            <div class="right">
+                <div class="big-title">
+                <h1>Our Mission.</h1>
+                </div>
+                <p class="text">
+                Our mission is simple yet impactful: To bridge the gap between Indian farmers and global markets, making the world savor the rich flavors of India's agro treasures. We aim to redefine the agro export landscape by prioritizing authenticity, quality, and ethical sourcing.
+                </p>
             </div>
-          
-            <div class="input-box">
-              <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+
+      <!-- Row 3 -->
+      
+      <div class="showcase-section1">
+        <div class="center">
+            <div class="big-title">
+                <h1>Our Products</h1>
             </div>
-          
-            <div class="input-box message-box">
-              <textarea rows="5" placeholder="Your Message" required></textarea>
-            </div>
-          
-            <!-- <div class="button">
-              <input type="submit" value="Send Now">
-            </div> -->
-          
-          </form>
+        </div>
     </div>
+
+    <div class="showcase-section1 product-row">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="./img/jaggery.png" class="product-image">
+            <p class="product-description">
+                Jaggery: Discover the natural sweetness of our authentic Indian jaggery. Crafted with care, it adds a unique flavor to your culinary creations, connecting you to centuries of tradition.
+            </p>
+        </div>
+
+        <div class="product">
+            <img src="./img/sugar.jpeg" class="product-image">
+            <p class="product-description">
+                Sugar: Our premium-quality sugar is sourced directly from Indian farms. It's more than an everyday staple; it's the pure essence of sweetness, elevating your recipes.
+            </p>
+        </div>
+
+        <div class="product">
+            <img src="./img/daals1.jpeg" class="product-image">
+            <p class="product-description">
+                Dals: Dive into the world of diverse Indian lentils. Known for their rich taste, high protein content, and versatility in cooking, our dals are a chef's best-kept secret.
+            </p>
+        </div>
+
+            <div class="product">
+                <img src="./img/chilli.jpeg" class="product-image">
+                <p class="product-description">
+                    Dried Red Chillies: Spice up your dishes with our sun-dried red chillies. Carefully cultivated to bring the perfect heat to your recipes, they're the secret to unforgettable flavors.
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./img/cashew.jpeg" class="product-image">
+                <p class="product-description">
+                    Cashews: Indulge in the buttery, nutty goodness of Indian cashews. Whether whole or split, they're a delightful snack and a versatile ingredient in your culinary adventures.
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./img/honey.jpeg" class="product-image">
+                <p class="product-description">
+                    Honey: Experience nature's liquid gold with our pure honey. Straight from the hive to your table, it's a sweet and wholesome addition to your daily life.
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./img/spices.jpeg" class="product-image">
+                <p class="product-description">
+                    Whole Spices: Elevate your dishes with our whole spices, including cinnamon, cardamom, and more. They're the key to unlocking a world of flavors in your cooking.
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./img/peanuts.jpeg" class="product-image">
+                <p class="product-description">
+                    Peanuts: Discover the wholesome goodness of our premium peanuts. Packed with flavor and nutrition, they're a crunchy delight that adds a satisfying twist to your snacks and recipes.
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./img/manymore.jpeg" class="product-image">
+                <p class="product-description">
+                    Many More: Explore our diverse range of agro products, extending beyond the mentioned varieties. Just inquire, and we'll provide you with the finest selection to meet your unique culinary needs.
+                </p>
+            </div>
     </div>
-  </div>
+
+
+    
+
+    <div class="showcase-section1">
+
+        <div class="center">
+            <div class="big-title">
+                <h1>Why Choose iAgEx</h1>
+            </div>
+        </div>
+
+        <div class="showcase-section1 product-row">
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="./img/w1.jpeg" class="product-image">
+                <p class="product-description">
+                    Exceptional Quality: At iAgEx, we uphold stringent quality standards, ensuring that our agro products meet and exceed expectations. We're committed to delivering the finest quality, making us the preferred choice for discerning buyers.
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./img/w2.jpeg" class="product-image">
+                <p class="product-description">
+                    Global Sourcing: Our extensive network of trusted farmers and suppliers across India allows us to source premium agro products. With iAgEx, you gain access to a diverse range of Indian agro treasures, all under one roof.
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./img/w3.jpeg" class="product-image">
+                <p class="product-description">
+                    Competitive Pricing: We understand the importance of competitive pricing in wholesale markets. iAgEx offers attractive pricing without compromising on quality, providing you with cost-effective solutions for your business.
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./img/w5.jpeg" class="product-image">
+                <p class="product-description">
+                    Reliable Supply Chain: With iAgEx, you can rely on a robust and efficient supply chain. We ensure timely deliveries, even for large quantities, to keep your business operations seamless and uninterrupted.
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./img/w4.jpeg" class="product-image">
+                <p class="product-description">
+                    Custom Solutions: Whether you need 25 or 100 tons per month, iAgEx tailors solutions to your specific requirements. Our flexibility ensures you get precisely what you need, when you need it.
+                </p>
+            </div>
+
+            <div class="product">
+                <img src="./img/w6.jpeg" class="product-image">
+                <p class="product-description">
+                    Global Reach: iAgEx is your gateway to Indian agro excellence on a global scale. Join hands with us to access a world of flavors and products, all backed by our commitment to quality and reliability.
+                </p>
+            </div>
+
+    </div></div>
+
+    <div class="showcase-section">
+
+        <div class="left">
+            <div class="big-title">
+            <h1>Empowering Agriculture Worldwide.</h1>
+            </div>
+            <p class="text">
+                Our journey to bridge the gap between Indian farmers and global markets is not just about business; it's about making the world savor the rich flavors of India's agro treasures. We're dedicated to ethical sourcing and quality assurance, ensuring that every product that leaves our hands represents the essence of Indian agriculture.
+
+                <br><br>With a focus on sustainability and authenticity, iAgEx is your trusted partner for procuring agro products in quantities ranging from 25 to 100 tons per month. Join us in our journey to empower agriculture worldwide and bring the finest Indian agro excellence to your global market.
+            </p>
+
+        </div>
+
+        <div class="right">
+            <img src="./img/farm.jpg" class="image-with-curve"> 
+        </div>
+    </div>
+
+    <div class="showcase-section1">
+
+        <div class="center">
+            <div class="big-title">
+                <h1>Get in touch with iAgEx</h1>
+            </div>
+        </div>
+
+                <p class="text1">
+                    Whether you have inquiries, seek potential partnerships, or are ready to place an order, we invite you to connect with us. At iAgEx, we are dedicated to serving you with the best of Indian agro excellence.<br><br>
+                    For specific product requirements or business inquiries, please visit our <a href="contact.html">Contact Us</a> page. There, you can conveniently fill out a form to reach our team directly, providing us with the necessary details to assist you promptly.<br><br>
+                    Additionally, for swift and direct communication, you can also contact our support team via email at <a href="mailto:support@iagex.in">support@iagex.in</a>  We are here to facilitate your journey into the world of premium agro products and ensure a seamless and satisfying experience with iAgEx.<br><br>
+                </p>
+            </div>
+
+    </div>
+
+          
+
+</div>
+<div class="bottom-area">
+          <div class="container">
+            <button class="toggle-btn">
+              <i class="far fa-moon"></i>
+              <i class="far fa-sun"></i>
+            </button>
+          </div>
+        </div>
+<script>
+    document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+                "body").style.visibility = "hidden";
+            document.querySelector(
+                "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+                "#loader").style.display = "none";
+            document.querySelector(
+                "body").style.visibility = "visible";
+        }
+    };
+</script>
+<footer>
+    <p>&copy; 2023 iAgEx- Indian Agro Exports</p>
+
+    <!-- Example attribution for images from Freepik -->
+    <p>Images from <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">https://www.freepik.com/</a></p>
+
+</footer>
+
+<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+<script src="./app.js"></script>
+</main>
+
+
+
 </body>
-</html>
 
+  
+</html>
