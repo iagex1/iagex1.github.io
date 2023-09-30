@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Contact - iAgEx </title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+      footer {
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         background-color: #f1f8fc;
+         color: #312f3a;
+         text-align: center;
+      }
+      </style>
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+  <div id="loader" class="center1"></div>
+
+  <div class="big-wrapper light">
+      <img src="./img/shape.png" alt="" class="shape" />
+
+      <header>
+
+        <div class="container">
+          <div class="logo">
+              <a href="index.html"><img src="./img/logo.png" alt="Logo" />
+            <h3>Indian Agro Exports</h3>
+          </div>
+
+      </header>
+
+    <div class="showcase-section1">
+
+        <div class="center">
+            <div class="big-title1">
+                <h1>Get In Touch With iAgEx Team</h1>
+            </div>
+        </div>
+
+                <p class="text1">
+                    Thank you for your interest in iAgEx - Indian Agro Exports!<br>Our team brings decades of wholesale expertise to source only the highest quality ingredients directly from farms across India.<br>Whether you have specific requirements or questions, please don't hesitate to reach out to us.<br>You can fill in the contact form below with your details, or if you prefer, you can send us an email.<br>We're here to serve you and provide the best of Indian agro excellence.
+                </p>
+
+  <div class="container1">
+    <div class="content">
+      <div class="left-side">
+
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one"><a href="mailto:support@iagex.in">support@iagex.in</a></div>
+        </div>
+      </div>
+      <div class="right-side">
+
+        <form id="contact-form">
+
+            <input type="hidden" name="contact_number">
+
+            <div class="input-box">
+              <input type="text" name="company" placeholder="Your Company" required>
+            </div>
+          
+            <div class="input-box">
+              <input type="text" name="product" placeholder="Product Interested In" required>
+            </div>
+          
+            <div class="input-box">
+              <input type="number" name="quantity" placeholder="Required Quantity (in Kgs)" required>
+            </div>
+          
+            <div class="input-box">
+              <input type="text" name="location" placeholder="Your Location" required>
+            </div>
+          
+            <div class="input-box">
+              <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+          
+            <div class="input-box message-box">
+              <textarea rows="5" name="message" placeholder="Your Message" required></textarea>
+            </div>
+          
+            <div class="button">
+                <input type="submit" value="Send Now" class="btn">
+          
+        </form>
+    </div>
+    </div>
+</div>
+
+    <script type="text/javascript">
+      // Initialize EmailJS with your user ID
+      (function () {
+        emailjs.init('${{ secrets.MAIL_KEY }}');
+      })();
+    
+      window.onload = function () {
+        var contactForm = document.getElementById('contact-form');
+        var submitButton = contactForm.querySelector('input[type="submit"]');
+        var loadingOverlay = document.getElementById('loadingOverlay');
+    
+        contactForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+    
+          // Disable the submit button while processing
+          // submitButton.disabled = true;
+    
+          // Show loading overlay
+          loadingOverlay.style.display = 'block';
+    
+          // Generate a random five-digit number for the contact_number variable
+          this.contact_number.value = Math.random() * 100000 | 0;
+    
+          // Send the form using EmailJS
+          emailjs
+            .sendForm('contact_service', 'contact_form', this)
+            .then(() => {
+              // Redirect to success page
+              window.location.href = 'success.html';
+            })
+            .catch(() => {
+              // Redirect to failure page
+              window.location.href = 'failed.html';  
+            })
+            .finally(() => {
+              // Always hide loading spinner
+              loadingOverlay.style.display = 'none'; 
+            });
+          });
+        };
+
+
+    </script>
+
+  </div>
+  <script>
+    document.onreadystatechange = function () {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+                "body").style.visibility = "hidden";
+            document.querySelector(
+                "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+                "#loader").style.display = "none";
+            document.querySelector(
+                "body").style.visibility = "visible";
+        }
+    };
+</script>
+<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+<script src="./js/app.js"></script>
+
+<footer>
+  <p>&copy; 2023 iAgEx- Indian Agro Exports</p>
+
+  <!-- Example attribution for images from Freepik -->
+  <p>Images from <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">https://www.freepik.com/</a></p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> iAgEx - OOPS </title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        footer {
+           position: absolute;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           background-color: #f1f8fc;
+           color: #312f3a;
+           text-align: center;
+        }
+        </style>
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+    <div id="loader" class="center1"></div>
+
+    <div class="big-wrapper light">
+        <img src="./img/shape.png" alt="" class="shape" />
+
+        <header>
+
+          <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="./img/logo.png" alt="Logo" />
+              <h3>Indian Agro Exports</h3>
+            </div>
+
+        </header>
+
+
+        <div class="showcase-section2">
+
+            <div class="center">
+                <div class="big-title1">
+                    <h1>OOPS! SOMETHING WENT WRONG</h1>
+                </div>
+            </div>
+                    <p class="text1">
+                        Sorry, we couldn't process your request.<br><br> Please try again using <a href="contact.html">Contact Us</a> page or reach out to us directly via email - <a href="mailto:support@iagex.in">support@iagex.in</a>.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <script>
+            document.onreadystatechange = function () {
+                if (document.readyState !== "complete") {
+                    document.querySelector(
+                        "body").style.visibility = "hidden";
+                    document.querySelector(
+                        "#loader").style.visibility = "visible";
+                } else {
+                    document.querySelector(
+                        "#loader").style.display = "none";
+                    document.querySelector(
+                        "body").style.visibility = "visible";
+                }
+            };
+        </script>
+        <footer>
+            <p>&copy; 2023 iAgEx- Indian Agro Exports</p>
+    
+            <!-- Example attribution for images from Freepik -->
+            <p>Images from <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">https://www.freepik.com/</a></p>
+
+      </footer>
+    </body>
+    
